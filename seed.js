@@ -24,5 +24,5 @@ var places = [
 //var db = connect("localhost:27017/biz");
 
 for(var place in places){
-    db.collection.insert(place);
+    db.places.insert(places[place]);
 }
