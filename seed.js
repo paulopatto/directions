@@ -5,7 +5,7 @@ var places = [
     },
     {
         name: "MASP",
-        loc[-23.560761, -46.655974]
+        loc:[-23.560761, -46.655974]
     },
     {
         name: "Catedral da Se",
@@ -21,8 +21,8 @@ var places = [
         loc: [-22.911875, -43.193221]
     }
 ];
-var mongo = new Mongo();
-for(place in places){
+//var db = connect("localhost:27017/biz");
 
-
+for(var place in places){
+    db.collection.insert(place);
 }
