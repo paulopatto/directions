@@ -12,13 +12,13 @@
 
 ## Comando usado
 Foi utilizado o comando $geoNear do MongoDB com sucesso com a seguinte sintaxe:
-<code>
+<code><pre>
     db.runCommand({
         geoNear: 'places', // places 'e o nome da minha base de dados do mongodb
         near: [$lat, $long], // Center
         distanceMultiplier: (3963 * (Math.PI / 180)) // Milhas
     });
-</code>
+</pre></code>
 
 ## Referencias
 
